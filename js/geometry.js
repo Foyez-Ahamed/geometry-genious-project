@@ -24,3 +24,13 @@ function parallelogramCalculate(){
 
     setInnerTextById('set-area-paralla',area);
 };
+
+
+function ellipseCalculate(){
+   const major = getInputValueById('semi=major-input');
+   const minor = getInputValueById('semi-minor-input');
+
+   const area = parseInt(Math.PI * major * minor);
+
+   setInnerTextById('set-area-ellipse', area);
+};
